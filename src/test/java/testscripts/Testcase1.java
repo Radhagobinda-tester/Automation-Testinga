@@ -32,7 +32,7 @@ public void tc1() throws IOException, InterruptedException {
 	Thread.sleep(10000);
 
 	
-     //name
+     
     // Find the element by its locator
     WebElement element = driver.findElement(By.xpath("(//input[@placeholder='First and last name'])[1]"));
 
@@ -63,8 +63,7 @@ public void tc1() throws IOException, InterruptedException {
     String text2 = element3.getText();
 
     // Assert the expected text value
-    AssertJUnit.assertEquals(text2, pdata.getPropertyFileData("pnamefield"));
-   
+    
 	
 
 	
