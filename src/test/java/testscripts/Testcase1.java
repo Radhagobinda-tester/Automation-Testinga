@@ -6,7 +6,6 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import genericLib.BaseClass;
@@ -28,11 +27,7 @@ public void tc1() throws IOException, InterruptedException {
 	Thread.sleep(10000);
 	l.submitButton();
 	
-	/*Assert.assertEquals(driver.getText(),pdata.getPropertyFileData("namefield"))
-	Assert.assertEquals(driver.getTitle(),pdata.getPropertyFileData("enamefield"));
-	Assert.assertEquals(driver.getTitle(),pdata.getPropertyFileData("pnamefield"));
-	//Assert.assertEquals(driver.getTitle(),pdata.getPropertyFileData("rnamefield"));
-	*/
+
 	
 	Thread.sleep(10000);
 
@@ -69,19 +64,7 @@ public void tc1() throws IOException, InterruptedException {
 
     // Assert the expected text value
     AssertJUnit.assertEquals(text2, pdata.getPropertyFileData("pnamefield"));
-    /*
-    // Find the element by its locator
-    WebElement element4 = driver.findElement(By.xpath("(//input[@type='submit'])[1]"));
-
-    // Get the text from the element
-    String text3 = element4.getText();
-
-    // Assert the expected text value
-    AssertJUnit.assertEquals(text3, pdata.getPropertyFileData("rnamefield"));
-       
-}
-	*/
-	
+   
 	
 
 	
